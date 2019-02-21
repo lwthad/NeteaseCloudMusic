@@ -1,0 +1,11 @@
+<view class='wrap'>
+	<view 
+    hover-class='navigator-hover'
+    class='item' 
+    data-id='{{item.id}}' 
+    bindtap='tolist' 
+    wx:for='{{types}}'>
+      <image src='{{item.picUrl}}'></image>
+      <view>{{item.name}}</view>
+	</view>
+</view>

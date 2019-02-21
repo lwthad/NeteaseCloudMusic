@@ -1,0 +1,43 @@
+/* pages/searchlist/searchlist.wxss */
+page{
+	background-color: rgb(252, 245, 245);
+}
+.header{
+  display: flex;
+}
+.header input{
+  width: 600rpx;
+  border: 2px solid #333;
+  height: 45px;
+	line-height: 85rpx;
+}
+.header button{
+  flex: 1;
+  border: 2px solid #333;
+}
+.outer{
+  border: 2rpx solid transparent;
+}
+.item{
+  background: #ebfff0;
+	/* margin: 30rpx 0;  */
+  margin: 10rpx 0px;
+  display: flex;
+}
+.item image{
+  width: 280rpx;
+  height: 280rpx;
+}
+.item .con{
+  flex: 1;
+  margin-left: 30rpx;
+	font-size: 15px;
+}
+.item .con view{
+  color: black;
+  line-height: 30rpx;
+	margin-top: 30rpx;
+}
+.item .con .singer{
+  font-size: 30rpx;
+}

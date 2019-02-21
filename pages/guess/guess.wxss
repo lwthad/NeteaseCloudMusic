@@ -1,0 +1,21 @@
+.item{
+	width: 50%;
+	height: 506rpx;
+	display: inline-block;
+	vertical-align: top;
+}
+.item image{
+	width: 90%;
+	display: block;
+	height: 320rpx;
+	margin: 10rpx auto;
+	border-radius: 10px;
+}
+.item view{
+	width: 90%;
+	margin: 0 auto;
+}
+.navigator-hover {
+    color:blue;
+    font-weight: bold;
+}

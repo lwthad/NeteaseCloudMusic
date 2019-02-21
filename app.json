@@ -1,0 +1,39 @@
+{
+  "pages":[
+      "pages/search/search",
+      "pages/top/top",
+      "pages/guess/guess",
+      "pages/playlist/playlist",
+      "pages/play/play",
+      "pages/searchlist/searchlist"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f00",
+    "navigationBarTitleText": "网易云音乐"
+  },
+  "tabBar": {
+    "color": "gray",
+    "selectedColor": "#312E2E",
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索音乐",
+        "iconPath": "img/netease.png",
+        "selectedIconPath": "img/net.png"
+      },
+      {
+        "pagePath": "pages/guess/guess",
+        "text": "猜你喜欢",
+        "iconPath": "img/lucky.png",
+        "selectedIconPath": "img/qq.png"
+      },
+      {
+        "pagePath": "pages/top/top",
+        "text": "榜单",
+        "iconPath": "img/netease.png",
+        "selectedIconPath": "img/le.png"
+      }
+    ]
+  }
+}

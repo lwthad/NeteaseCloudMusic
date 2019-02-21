@@ -1,0 +1,38 @@
+/* pages/playlist/playlist.wxss */
+.wrap{
+
+}
+.header .searchi{
+  height: 100rpx;
+}
+.item{
+	border-bottom: 1px solid #333;
+	height: 100rpx;
+	display: flex;
+}
+.left{
+	width: 100rpx;
+	text-align: center;
+	color: rgb(14, 13, 13);
+	font-size: 50rpx;
+	margin-top: 10rpx;
+}
+.right{
+	flex:1;
+	overflow: hidden;
+  font-size: 10rpx;
+  margin-left: 50px;
+}
+.top{
+	font-size: 30rpx;
+	color:rgb(24, 22, 22);
+	line-height: 50rpx;
+	white-space: nowrap;
+}
+.bottom{
+	font-size: 30rpx;
+	color:rgb(102, 101, 101);
+}
+.vip{
+	color:red;
+}

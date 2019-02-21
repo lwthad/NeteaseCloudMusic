@@ -1,0 +1,41 @@
+/* pages/play/play.wxss */
+page{
+	background-color: #dfd5d5;
+}
+
+image{
+	width: 100%;
+}
+
+.times{
+	display: flex;
+}
+.times view{
+	flex: 1;
+}
+.start{
+  margin-left: 30rpx;
+}
+.end{
+  margin-right: 30rpx;
+  text-align: right;
+}
+.wrap{
+  background: #f7f7f7;
+  height: 350px;
+  margin-top: 20px;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.wrap view{
+  line-height: 50rpx;
+  text-align: center;
+}
+.activelrc{
+  font-size: 23px;
+  color:rgb(253, 5, 5);
+	-webkit-transition: 0.5s all linear;
+}

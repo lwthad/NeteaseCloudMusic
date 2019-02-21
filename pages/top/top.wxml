@@ -1,0 +1,8 @@
+<view class='wrap'>
+	<view
+    hover-class='navigator-hover'
+    data-id='{{index}}'
+    bindtap='tolist'
+    class='item'
+    wx:for='{{types}}'>{{index}}---->{{item}}</view>
+</view>

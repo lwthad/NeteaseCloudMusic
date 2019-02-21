@@ -1,0 +1,22 @@
+<!--pages/play/play.wxml-->
+<image bindtap="toggle" src='{{imgSrc}}'></image>
+<slider 
+  min='0'
+  max='{{duration}}'
+  value='{{currentTime}}'
+  backgroundColor='black'
+  activeColor='blue'
+  block-color='black'
+  block-size='20'
+  bindchange='change'
+  bindchanging='changing'
+></slider>
+
+<view class='times'>
+  <view class='start'>{{start}}</view>
+  <view class='end'>{{end}}</view>
+</view>
+
+<scroll-view class='wrap' scroll-with-animation='true' scroll-into-view='{{viewId}}' scroll-y='true'>
+  <view wx:for='{{lrc}}' class='{{viewId=="el-"+index?"activelrc":""}}' id='el-{{index}}'>{{item}}</view>
+</scroll-view>

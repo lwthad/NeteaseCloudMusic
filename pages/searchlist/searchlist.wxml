@@ -1,0 +1,21 @@
+<!--pages/searchlist/searchlist.wxml-->
+<view class='header'>
+  <input bindblur='blur' placeholder='请输入搜索词条'></input>
+  <button bindtap='search'>搜索</button>
+</view>
+
+<!-- 搜索显示 -->
+<view class='outer'>
+  <view class='item' wx:for='{{data}}' data-id='{{item.id}}' data-text='{{item.name}}' data-status='{{index}}' bindtap='toPlay'>
+    <!-- <image src='{{item.album.artist.img1v1Url}}'></image> -->
+    <image src='{{imgSrc}}'></image>
+    <view class='con'>
+      <view>歌名：{{item.name}}</view>
+      <view class='singer'>歌手：
+      <text wx:for='{{item.artists}}' wx:for-item='subItem'>{{subItem.name}} </text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view>{{str}}</view>

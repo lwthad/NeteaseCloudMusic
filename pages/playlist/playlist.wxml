@@ -1,0 +1,21 @@
+<!--pages/playlist/playlist.wxml-->
+<view class='header'>
+  <input class='searchi' bindblur='blur' placeholder='请输入搜索词条'></input>
+  <button bindtap='search'>搜索</button>
+</view>
+
+<view class='wrap'>
+	<view class='item' data-id='{{item.id}}' data-text='{{item.name}}' bindtap='audio' wx:for='{{list}}'>
+
+		<view class='left {{index < 3 ? "vip" : ""}}'>{{index+1}}</view>
+
+		<view class='right'>
+
+        <view class='top'>{{item.name}}</view>
+        <view class='bottom'>
+            <text wx:for='{{item.ar}}' wx:for-item='subItem'>{{subItem.name}} </text>
+        </view>
+        
+		</view>
+	</view>
+</view>
